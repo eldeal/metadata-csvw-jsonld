@@ -1,0 +1,51 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "https://download.dev.cmd.onsdigital.co.uk/downloads/datasets/wellbeing-year-ending/editions/time-series/versions/6.csv",
+  "title": "Personal well-being estimates",
+  "description": "Estimates of life satisfaction, worthwhile, happiness and anxiety in the UK for the years ending March 2012 to September 2017.",
+  "tableSchema": {
+    "columns":[{
+        "titles":"V4_1",
+        "description":"Observation values",
+        "required": true   
+        },{
+        "titles":"data marking" 
+        },{
+        "titles":"time_codelist",
+        "url": "https://api.dev.cmd.onsdigital.co.uk/v1/code-lists/year-ending",
+        "required": true   
+        },{
+        "titles":"time",
+        "required": true   
+        },{
+        "titles":"geography_codelist",
+        "url":"https://api.dev.cmd.onsdigital.co.uk/v1/code-lists/wellbeing-geography",
+        "required": true   
+        },{
+        "titles":"geography",
+        "required": true   
+        },{
+        "titles":"estimate_codelist",
+        "url": "https://api.dev.cmd.onsdigital.co.uk/v1/code-lists/wellbeing-estimate",
+        "description":"Very good - a rating of 0-1 for anxiety and 9-10 for happiness, life satisfaction and worthwhile. Good - a rating of 2-3 for anxiety and 7-8 for happiness, life satisfaction and worthwhile. Fair - a rating of 4-5 for anxiety and 5-6 for happiness, life satisfaction and worthwhile. Poor - a rating of 6-10 for anxiety and 0-4 for happiness, life satisfaction and worthwhile.",
+        "required": true   
+        },{
+        "titles":"estimate",
+        "required": true   
+        },{
+        "titles":"measureofwellbeing_codelist",
+        "url":"https://api.dev.cmd.onsdigital.co.uk/v1/code-lists/wellbeing-measureofwellbeing",
+        "required": true   
+        },{
+        "titles":"measure of wellbeing",
+        "required": true   
+        }
+    ]},
+  "notes": [{
+    "type": "Annotation",
+    "target": "https://download.dev.cmd.onsdigital.co.uk/downloads/datasets/wellbeing-year-ending/editions/time-series/versions/6.csv#col=9",
+    "body": "The questions asked are ‘Overall, how anxious did you feel yesterday? Where 0 is `not at all anxious` and 10 is `completely anxious`.’, ‘Overall, how happy did you feel yesterday? Where 0 is `not at all happy` and 10 is `completely happy`.’, ‘Overall, to what extent do you feel the things you do in your life are worthwhile? Where 0 is `not at all worthwhile` and 10 is `completely worthwhile`.’ and ‘Overall, how satisfied are you with your life nowadays? Where 0 is `not at all satisfied` and 10 is `completely satisfied`.’",
+    "motivation": "commenting"
+  }]
+}
+

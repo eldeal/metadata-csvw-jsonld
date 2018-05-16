@@ -1,0 +1,43 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "simple-example.csv",
+  "title": "AF001EW  Members of the Armed Forces by residence type by sex by age",
+  "description": "Lorem ipsum...",
+  "tableSchema": {
+    "columns": [{
+        "titles": "Geographic Area",
+        "description": "Geographic area from 2011 Statistical Hierarchy",    
+        "url": "http://localhost:20099/datasets/1234/dimensions/2011STATH",
+        "required": true    
+    }, {
+        "titles": { 
+            "en": "Year",
+            "cy": "Blwyddyn",
+        },
+        "url": "http://localhost:20099/datasets/1234/dimensions/year",
+        "required": true    
+    }, {
+        "titles": "Value",        
+        "required": true    
+    }, {
+        "titles": "Data Marking",
+        "url": "http://localhost:20099/datasets/1234/attributes/data-marking"
+    }, {
+        "titles": "Quality Metric",
+        "url": "http://localhost:20099/datasets/1234/attributes/quality-metric"
+    }
+    ]
+  },
+  "notes": [{
+    "type": "Annotation",
+    "target": "simple-example.csv#row=4",
+    "body": "Data from Powys has been corrected",
+    "motivation": "commenting"
+  }, {
+    "type": "Annotation",
+    "target": "simple-example.csv#col=5",
+    "body": "Consult the quality & methodology docs for notes on calculation of CV values",
+    "motivation": "commenting"
+  }]
+}
+
