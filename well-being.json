@@ -6,7 +6,7 @@
   "tableSchema": {
     "columns":[{
         "titles":"V4_1",
-        "description":"Observation values",
+        "name":"Observation values",
         "datatype": "number",
         "required": true   
         },{
@@ -17,6 +17,7 @@
         "required": true   
         },{
         "titles":"time",
+        "name":"Time",
         "required": true   
         },{
         "titles":"geography_codelist",
@@ -24,6 +25,7 @@
         "required": true   
         },{
         "titles":"geography",
+        "name":"Country",
         "required": true   
         },{
         "titles":"estimate_codelist",
@@ -32,13 +34,15 @@
         "required": true   
         },{
         "titles":"estimate",
+        "name":"Estimates (Average/Thresholds)",
         "required": true   
         },{
         "titles":"measureofwellbeing_codelist",
         "url":"https://api.dev.cmd.onsdigital.co.uk/v1/code-lists/wellbeing-measureofwellbeing",
         "required": true   
         },{
-        "titles":"measure of wellbeing",
+        "titles":"measureofwellbeing",
+        "name":"Measure of well-being",
         "required": true   
         }
     ]},
