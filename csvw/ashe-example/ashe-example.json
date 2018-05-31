@@ -1,0 +1,126 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv",
+  "dct:title": "Annual summary of hours worked, place of work by Local Authority",
+  "dct:description": "Estimates of paid hours worked for UK employees by gender and full/part-time working by work based Region to Local Authority level.",
+  "dct:issued": "2017-10-26T09:30:00.000Z",
+  "dct:publisher": {
+    "name": "ONS",
+    "@type": "GovOrg",
+    "@id": "https://www.ons.gov.uk/aboutus"
+  },
+  "dcat:contactPoint": {
+    "email": "earnings@ons.gsi.gov.uk",
+    "name": "Roger Smith",
+    "telephone": "+44 (0)1633 45 6120"
+  },
+  "tableSchema": {
+    "columns": [
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=0",
+        "datatype": "number",
+        "name": "Hours per week",
+        "required": true,
+        "titles": "V4_2"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=1",
+        "titles": "Data marking"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=2",
+        "titles": "Coefficient of variation"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=3",
+        "name": "Time_codelist",
+        "required": true,
+        "valueURL": "/codes/{Time_codelist}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=4",
+        "description": "",
+        "name": "Time",
+        "titles": ""
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=5",
+        "name": "ashe-geography",
+        "required": true,
+        "valueURL": "/codes/{ashe-geography}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=6",
+        "description": "",
+        "name": "Geography",
+        "titles": ""
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=7",
+        "name": "Hours_codelist",
+        "required": true,
+        "valueURL": "/codes/{Hours_codelist}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=8",
+        "description": "",
+        "name": "Hours",
+        "titles": ""
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=9",
+        "name": "Sex_codelist",
+        "required": true,
+        "valueURL": "/codes/{Sex_codelist}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=10",
+        "description": "",
+        "name": "Sex",
+        "titles": ""
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=11",
+        "name": "WorkingPattern_codelist",
+        "required": true,
+        "valueURL": "/codes/{WorkingPattern_codelist}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=12",
+        "description": "",
+        "name": "WorkingPattern",
+        "titles": ""
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=13",
+        "name": "Statistics_codelist",
+        "required": true,
+        "valueURL": "/codes/{Statistics_codelist}"
+      },
+      {
+        "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=14",
+        "description": "",
+        "name": "Statistics",
+        "titles": ""
+      }
+    ],
+    "aboutUrl": "https://api.beta.ons.gov.uk/v1/datasets/ashe-table-7-hours/editions/time-series/versions/1/metadata"
+  },
+  "dcat:theme": "/employmentandlabourmarket/peopleinwork/earningsandworkinghours",
+  "dct:license": "Open Government Licence v3.0",
+  "dct:accrualPeriodicity": "Annual",
+  "notes": [
+    {
+      "type": "Coefficient of variation (CV)",
+      "target": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=need-to-store",
+      "body": "The CV column the quality of each estimate based on the coefficient of variation (CV) of that estimate. The CV is the ratio of the standard error of an estimate to the estimate itself and is expressed as a percentage. The smaller the coefficient of variation the greater the accuracy of the estimate. The true value is likely to lie within +/- twice the CV. For example, for an estimate of £200 with a CV of 5%, we would expect the true population average to be within the range £180 to £220.",
+      "motivation": ""
+    },
+    {
+      "type": "Data markings",
+      "target": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=need-to-store",
+      "body": "Estimates with a CV greater than 20% are suppressed from publication on quality grounds, along with those for which there is a risk of disclosure of individual employees or employers. This is shown as an 'x' in the data marking column.",
+      "motivation": ""
+    }
+  ]
+}
