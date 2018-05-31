@@ -157,8 +157,10 @@ func populateColumns(dims []models.CodeList, unit, csvURL string) []Column {
 
 		codeHeader := header[i]
 		dimHeader := header[i+1]
+		dimHeader = strings.ToLower(dimHeader)
 
 		var dim models.CodeList
+
 		for _, d := range dims {
 			if d.Name == dimHeader {
 				dim = d
@@ -201,9 +203,9 @@ func assignTopLevel(m *models.Metadata) *CSVW {
 		Frequency:   m.ReleaseFrequency,
 		Contact:     m.Contacts[0],
 		Creator: Creator{
-			Name: "ONS",
-			Type: "GovOrg",
-			ID:   "https://www.ons.gov.uk/aboutus",
+			Name: m.Publisher.Name,
+			Type: m.Publisher.Type,
+			ID:   m.Publisher.HRef,
 		},
 	}
 }

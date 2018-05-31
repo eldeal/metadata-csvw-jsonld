@@ -5,9 +5,9 @@
   "dct:description": "Estimates of paid hours worked for UK employees by gender and full/part-time working by work based Region to Local Authority level.",
   "dct:issued": "2017-10-26T09:30:00.000Z",
   "dct:publisher": {
-    "name": "ONS",
-    "@type": "GovOrg",
-    "@id": "https://www.ons.gov.uk/aboutus"
+    "name": "Office for National Statistics (ONS)",
+    "@type": "Non-ministerial department",
+    "@id": "https://www.ons.gov.uk"
   },
   "dcat:contactPoint": {
     "email": "earnings@ons.gsi.gov.uk",
@@ -35,73 +35,73 @@
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=3",
         "name": "Time_codelist",
         "required": true,
-        "valueURL": "/codes/{Time_codelist}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/calendar-years/codes/{Time_codelist}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=4",
         "description": "",
-        "name": "Time",
-        "titles": ""
+        "name": "time",
+        "titles": "Time"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=5",
         "name": "ashe-geography",
         "required": true,
-        "valueURL": "/codes/{ashe-geography}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/ashe-geography/codes/{ashe-geography}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=6",
         "description": "",
-        "name": "Geography",
-        "titles": ""
+        "name": "geography",
+        "titles": "Geographic areas"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=7",
         "name": "Hours_codelist",
         "required": true,
-        "valueURL": "/codes/{Hours_codelist}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/ashe-hours/codes/{Hours_codelist}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=8",
         "description": "",
-        "name": "Hours",
-        "titles": ""
+        "name": "hours",
+        "titles": "Hours worked"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=9",
         "name": "Sex_codelist",
         "required": true,
-        "valueURL": "/codes/{Sex_codelist}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/ashe-sex/codes/{Sex_codelist}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=10",
         "description": "",
-        "name": "Sex",
-        "titles": ""
+        "name": "sex",
+        "titles": "Sex"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=11",
         "name": "WorkingPattern_codelist",
         "required": true,
-        "valueURL": "/codes/{WorkingPattern_codelist}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/ashe-working-pattern/codes/{WorkingPattern_codelist}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=12",
         "description": "",
-        "name": "WorkingPattern",
-        "titles": ""
+        "name": "workingpattern",
+        "titles": "Working pattern"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=13",
         "name": "Statistics_codelist",
         "required": true,
-        "valueURL": "/codes/{Statistics_codelist}"
+        "valueURL": "https://api.beta.ons.gov.uk/v1/code-lists/ashe-statistics/codes/{Statistics_codelist}"
       },
       {
         "@id": "https://download.beta.ons.gov.uk/downloads/datasets/ashe-table-7-hours/editions/time-series/versions/1.csv#col=14",
-        "description": "",
-        "name": "Statistics",
-        "titles": ""
+        "description": "Estimates are provided for mean, median and selected percentiles in the distribution. Percentiles mark the values below which certain proportions of jobs fall. For example, the 20th percentile is the value below which 20% of jobs fall.",
+        "name": "statistics",
+        "titles": "Statistics"
       }
     ],
     "aboutUrl": "https://api.beta.ons.gov.uk/v1/datasets/ashe-table-7-hours/editions/time-series/versions/1/metadata"
