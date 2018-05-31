@@ -1,0 +1,51 @@
+{
+ "@context": "ons-context.jsonld",
+ "id": "https://beta.ons.gov.uk/datasets/wellbeing-year-ending/editions/time-series/versions/1",
+ "type": "Dataset",
+ "identifier": "wellbeing-year-ending",
+ "title": "Personal well-being estimates",
+ "description": "Estimates of life satisfaction, worthwhile, happiness and anxiety in the UK for the years ending March 2012 to December 2017.",
+ "issued": "2018-05-17",
+ "language": "en",
+ "keyword": ["wellbeing", "well-being", "happyness"],
+ "publisher": {
+    "type": "Organization",
+    "name": "Office of National Statistics",
+    "homepage": "https://www.ons.gov.uk/"
+ },
+ "contactPoint": {
+    "name": "David Tabor",
+    "email": "QualityOfLife@ons.gsi.gov.uk",
+    "tel": "+44 (0) 1633 455871"
+ },
+ "accessRights": {
+    "dataLicence": "http://www.nationalarchives.gov.uk/doc/open-government-licence",
+    "contentLicence": "http://www.nationalarchives.gov.uk/doc/open-government-licence",
+    "attributionText": "Contains public sector information licensed under the Open Government Licence v3.0",
+    "copyrightNotice": "Crown Copyright",
+    "reuserGuidelines": "https://www.ons.gov.uk/help/termsandconditions",    
+    "attributionLink": "https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation"
+ },
+ "accrualPeriodicity": "http://purl.org/linked-data/sdmx/2009/code#freq-M",
+ "landingPage": "https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation",
+ "theme": "https://www.ons.gov.uk/economy/inflationandpriceindices",
+ "page": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/nov2016",
+ "distribution": [{
+    "title": "Consumer Price Inflation, Excel",
+    "description": "Measures of inflation data including CPI, CPIH, RPI and RPIJ. These tables complement the Consumer Price Inflation time series datasets available on our website.",
+    "issued": "2016-12-13",
+    "language": "en",
+    "accessURL": "https://beta.ons.gov.uk/datasets/wellbeing-year-ending",
+    "downloadURL": "https://download.cmd.onsdigital.co.uk/downloads/datasets/wellbeing-year-ending/editions/time-series/versions/1.xlsx",
+    "mediaType": "http://www.iana.org/assignments/media-types/application/vnd.ms-excel",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence",
+    "rights": {
+        "dataLicence": "http://www.nationalarchives.gov.uk/doc/open-government-licence",
+        "contentLicence": "http://www.nationalarchives.gov.uk/doc/open-government-licence",
+        "attributionText": "Contains public sector information licensed under the Open Government Licence v3.0",
+        "copyrightNotice": "Crown Copyright",
+        "reuserGuidelines": "https://www.ons.gov.uk/help/termsandconditions",    
+        "attributionLink": "https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation"
+    }
+ }]
+}
